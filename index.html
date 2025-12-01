@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 5 Form Input Fields</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h1>HTML 5 Form Input Fields</h1>
+
+    <form id="userForm" novalidate>
+
+        <!-- NAME -->
+        <div class="field">
+            <label>text input type for Name:</label>
+            <input type="text" id="firstName">
+            <span id="firstNameError" class="error"></span>
+        </div>
+
+        <!-- PASSWORD -->
+        <div class="field">
+            <label>password input type:</label>
+            <input type="password" id="password">
+            <span id="passwordError" class="error"></span>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="field">
+            <label>email input type:</label>
+            <input type="email" id="email">
+            <span id="emailError" class="error"></span>
+        </div>
+
+        <!-- URL -->
+        <div class="field">
+            <label>url input type:</label>
+            <input type="url" id="urlInput">
+        </div>
+
+        <!-- NUMBER -->
+        <div class="field">
+            <label>number input type:</label>
+            <input type="number" id="numberInput">
+        </div>
+
+        <!-- TEL -->
+        <div class="field">
+            <label>tel input type:</label>
+            <input type="tel" id="mobile">
+            <span id="mobileError" class="error"></span>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="field">
+            <label>search input type:</label>
+            <input type="search" id="searchInput">
+        </div>
+
+        <!-- DATE + TIME -->
+        <div class="field">
+            <label>Choose a date and time:</label>
+            <input type="datetime-local" id="dateTime">
+        </div>
+
+        <!-- SALARY -->
+        <div class="field salary-box">
+            <label>Choose your salary:</label>
+            <input type="range" id="salary" min="0" max="500000" value="400000">
+            <span id="salaryValue">400000</span>
+        </div>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
